@@ -37,15 +37,15 @@ Possible values:
 
 An absolute URL - points to another web site (like action="http://www.example.com/example.htm")
 A relative URL - points to a file within a web site (like action="example.htm") This is why it is form action. -->
- <form action="../index.html">
-  <button type="submit" class="button button5"style="vertical-align:middle">Home</button>
+ <form action="../index.html" id="index">
   </form>
-  <form action="page3.html">
-  <button type="submit" class="button button5"style="vertical-align:middle"><span>Step 3</span></button>
+    <button type="submit" form="index" class="button button5"style="vertical-align:middle">Home</button>
+  <form action="page3.html" id="page3">
   </form>
-  <form action="page4.html">
-  <button type="submit" class="button button5"style="vertical-align:middle"><span>Step 4</span></button>
+    <button type="submit" class="button button5"style="vertical-align:middle" form="page3"><span>Step 3</span></button>
+  <form action="page4.html" id="page4">
   </form>
+     <button type="submit" class="button button5"style="vertical-align:middle" form="page4"><span>Step 4</span></button>
   
      </html>
   <style>
