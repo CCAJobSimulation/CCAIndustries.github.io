@@ -32,13 +32,20 @@ If the automated tools can't help, then give a call to the organization's staff 
 
 -- Noah Apodaca, lead recruiter for staff at the University of California, Irvine</p>
   </body>
+  <!-- /Where to send the form-data when the form is submitted.
+Possible values:
 
- 
-     <button type="submit" class="button button5"style="horizontal-align:middle"><a href="../index.html">Home</a></button>
-        <button type="submit" class="button button5"style="horizontal-align:middle"><a href="Page4.html">Next Page</a></button>
-        <button type="submit" class="button button5"style="horizontal-align:middle"><a href="Page3.html">Previous Page</a></button>
-
-
+An absolute URL - points to another web site (like action="http://www.example.com/example.htm")
+A relative URL - points to a file within a web site (like action="example.htm") This is why it is form action. -->
+ <form action="../index.html">
+  <button type="submit" class="button button5"style="vertical-align:middle">Home</button>
+  </form>
+  <form action="page3.html">
+  <button type="submit" class="button button5"style="vertical-align:middle"><span>Step 3</span></button>
+  </form>
+  <form action="page4.html">
+  <button type="submit" class="button button5"style="vertical-align:middle"><span>Step 4</span></button>
+  </form>
   
      </html>
   <style>
