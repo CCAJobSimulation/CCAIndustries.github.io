@@ -24,18 +24,18 @@
 </h2>
 <li>Make sure you correct any errors or omissions. Check your spelling. Then, hand it in or mail it. Also, when mailing an application, be sure to send a cover letter re-stating your interest and qualifications.</li>
 </body>
-<form action="../index.html">
-    <button type="submit" class="button button5"><span>Home</span></button>
-</form>
-<form action="page2.html">
-<button type="submit" class="button button5"><span>Previous Step</span></button>
-</form>
-<form action="intermediate.html">
-<button type="submit" class="button button5"><span>Job Follow Up (Optional)</span></button>
-</form>
-<form action="page4.html">
-<button type="submit" class="button button5"><span>Next Step</span></button>
-</form>
+    <!--Buttons-->
+    <form action="../index.html" id="index"></form>
+            <form action="page2.html" id="page2"></form>
+    <form action="intermediate.html" id="inter"></form>
+    <form action="page4.html" id="page4"></form>
+    
+   
+<button type="submit" class="button button5" form="page2"><span>Previous Step</span></button>
+    <button type="submit" class="button button5" form="index"><span>Home</span></button>
+<button type="submit" class="button button5" form="inter"><span>Job Follow Up (Optional)</span></button>
+<button type="submit" class="button button5" form="page4"><span>Next Step</span></button>
+ <!--End Buttons-->
 </html>
 <style>
 h2 {
