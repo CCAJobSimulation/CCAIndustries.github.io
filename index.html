@@ -279,13 +279,18 @@
         <div class="row">
             <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
                 <div class="card">
-                    <img class="img img5" src="img/Anavami.jpg">
+                    <div class="container">
+  <img class="img img5" src="img/Anavami.jpg">
+  <div class="middle">
+   <form action="Anavami.html">
+      <button type="submit" class="button button5"style="vertical-align:middle"><span>Anavami</span></button>
+      </form>
+  </div>
+</div>
                     <div class="card-block">
                         <h5 class="text-bold">Anavami Isa</h5>
                         <h5>Email: AnavamiICCA@gmail.com</h5>
-			      <form action="Anavami.html">
-                                    <button type="submit" class="button button5"style="vertical-align:middle"><span>Anavami</span></button>
-				</form>
+			      
                     </div>
                 </div>
             </div>
@@ -414,6 +419,25 @@ div.container {
     font-weight:bold;
     text-align: center;
     font-family: "Arial Black", Times, serif;}
+/*new*/
+	.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
 
 	
 </style>
