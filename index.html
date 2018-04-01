@@ -1,4 +1,79 @@
 <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<h1> Welcome to CCAIndustries 5 Steps to Getting a Job </h1>
+
+<style>
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-right: 16px solid gray;
+  border-bottom: 16px solid blue;
+  border-left: 16px solid gray;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+h1 {
+    text-align: center;
+    color: grey;
+}
+body{
+  background-color: yellow;
+}
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -266,9 +341,9 @@
 </form>
 
                             <h5 class="text-bold">Christian Ihekweazu</h5>
-                           <a id="none" href="mailto:ChristianICCA@gmail.com">   
+                           <a id="none" href="mailto:ChristianICCA@gmail.com">
 			       <h5>Email:ChristianICCA@gmail.com</h5></a>
-                            
+
 				    </div>
                     </div>
                 </div>
@@ -291,7 +366,7 @@
     <button type="submit" class="button button5"style="vertical-align:middle"><span>Cameron</span></button>  </form>
 
                           <h5 class="text-bold">Cameron Stewart</h5>
-                         <a id="none" href="mailto:CameronSCCA@gmail.com">   
+                         <a id="none" href="mailto:CameronSCCA@gmail.com">
 			       <h5>Email:CameronSCCA@gmail.com</h5></a>
 
                       </div>
@@ -321,9 +396,9 @@
     </form>
 
                         <h5 class="text-bold">Anavami Isa</h5>
-                       <a id="none" href="mailto:AnavamiICCA@gmail.com">   
+                       <a id="none" href="mailto:AnavamiICCA@gmail.com">
 			       <h5>Email:AnavamiICCA@gmail.com</h5></a>
-			      
+
                     </div>
                 </div>
             </div>
@@ -385,11 +460,9 @@ h3 {
   font-weight:bold;
   font-family: "Arial Black", Times, serif;
 }
-
-
 	#thanky{
-		backgorund-color: #e7e7e7 ; 
-		
+		backgorund-color: #e7e7e7 ;
+
 	}
 .button5 {background-color: #008CBA;
   border: none;
@@ -416,7 +489,6 @@ h3 {
   position: relative;
   transition: 0.5s;
 }
-
 .button5 span:after {
   content: '\00bb';
   position: absolute;
@@ -425,33 +497,29 @@ h3 {
   right: -20px;
   transition: 0.5s;
 }
-
 .button5:hover span {
   padding-right: 25px;
 }
-
 .button5:hover span:after {
   opacity: 1;
   right: 0;
 }
-
 	.img5 {
   height: 200px;
-
 }
 	img {
     transition: .5s ease;
     border-radius: 10px;
     height: auto;
 }
-	
-	
+
+
 div.container {
       display:inline-block;
     }
     .navbar-default {
-	  
-     
+
+
 	    background: radial-gradient(#e2e2e2 25%, #e2e2e2 45%, #c4c4c4 90%);
     }
     h2 {color:black;
@@ -472,16 +540,13 @@ div.container {
 .container3:hover #hiy03 {
   opacity: 0.8;
 }
-
 .container2:hover #hiy02 {
   opacity: 0.8;
 }
 
-	
 .container1:hover #hiy01 {
   opacity: 0.8;
 }
-
 .container3:hover .middle {
   opacity: 1;
 }
@@ -492,9 +557,25 @@ div.container {
   opacity: 1;
 }
 
-	
 </style>
-		
+
 		<!-- Bottom Copyright -->
 
+</html>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
 </html>
