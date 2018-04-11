@@ -6,54 +6,85 @@
 
     </head>
 <body>
-    <img class="img-responsive" src="../img/Step_5.jpeg" alt="Job Interview" style="width:49%;height:400px;">
-   <iframe width="49%" height="400" src="https://www.youtube.com/embed/-QumVfGiBr8"></iframe>
-  <h1> Tips For A Successful Job Interview </h1>
-    <p>The job interview is the most important part of the job application process. To best conduct a successful job interview, you need to:</p>
-  <h2> Plan to articulate how you meet the employer’s needs </h2>
-  <p> You probably spent a lot of time working with the job description when you put together your cover letter and resume. Now that you’ve gotten an interview, you’ll want to review it—pay close attention to the qualifications and job duties, these are essentially lists of the employer’s needs.</p>
-  <p> For each qualification or duty, identify a skill that the employer is asking for. For example, if the job duty is “recruit volunteers,” related skills may include:</p>
-  <ul>
-    <li> identifying organizational need for volunteers</li>
-    <li> drafting volunteer position descriptions </li>
-    <li> marketing the volunteer opportunities </li>
-    <li> communicating with potential volunteers </li>
-    <li> selecting volunteers </li>
-  </ul>
-  <p> Your task, as the job candidate, is to prepare anecdotes about a specific time that you used these skills. You can use a format recommended by Pam Rechel at Brave Heart Consulting: name the skill, identify a specific time you used it, and explain how the skill will be useful in the new job.</p>
-  <h2> Four ways to get ready for the big day</h2>
-  <h3> Research the organization </h3>
-  <p> What is their mission? How does it distinguish itself from others working on similar issues or with similar clientele? What is the geographic scope of the organization? How is it funded? What buzz words do you notice when you read the organization’s website? </p>
-  <h3> Type up talking points </h3>
-  <p> For example, the anecdotes that illustrate your most salient skills. It’s fine to bring in notes to the interview with you. </p>
-  <li> For example, the anecdotes that illustrate your most salient skills. It’s fine to bring in notes to the interview with you.</li>
-  <h2> Figure out how to answer common interview questions</h2>
-  <p> Here are a few: </p>
-  <ul>
-  <li>Tell me about yourself.  Don’t assume the hiring team remembers the details of your resume; summarize your accomplishments, work, and passions in a few key sentences.</li>
-  <li> Why do you want to work for our organization? </li>
-  <li> Why do you want this position?</li>
-  <li> What are your strengths and weaknesses?</li>
-  <li> Can you tell us about a time you used the skills necessary in this position? </li>
-</ul>
-  <h2> Prepare your own questions</h2>
-  <p> Just like a limp handshake, a one-sided interview is no fun! The hiring team wants to hear your questions and see that you are actively engaged in learning more about the organization and position. </p>
-<ul>
-    <li> When you research the organization and position, write down unanswered questions that arise for you and ask them during the interview.</li>
-    <li> Ask about the context and history of the position, what daily tasks and activities are involved, how the position is managed, what the rest of the hiring process looks like, and anything else you are curious about. See the Idealist Guides to Nonprofit Careers for more. </li>
-    <li> Plan to ask the most important questions, like how does the open position help the organization fulfill its mission as early as possible during the interview. During your second interview and later, you should avoid asking questions that cast doubt on your understanding of the position.</li>
-</ul>
-  <h2> Put together your Interview Tool Bag </h2>
-  <p> Do not leave bag-packing to the last minute. Prepare your Interview Tool Bag the night before the big day:</p>
-<ul>
-  <li> Tissues or a handkerchief </li>
-  <li> Copies of your resume and work samples </li>
-  <li> Breath mints (not gum) </li>
-  <li> Bottle of water </li>
-  <li> Directions including address, parking information, suite or office number, floor number, and contact information including name and phone number (but keep your phone on silent during the interview, or better yet, just turn it off!) </li>
-  <li> Notes (talking points, anecdotes, questions) </li>
-  <li> Note paper and pen to take notes if you need to </li>
-</ul>
+   <style>
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+<p>The job interview is the most important part of the job application process. To best conduct a successful job interview, you need to:</p>
+<button class="accordion">Make your own practice questions</button>
+<div class="panel">
+  <p>To best prepare for your job interview, you may want to practice questions that you know that your employer will ask you. Questions such as:” what are some strengths or weaknesses?” and “what are some of your hobbies?” are sure to appear in your interview to if you practice these types of questions and come up with creative responses, you will be sure to have a one-up on your employers.
+</p>
+</div>
+
+<button class="accordion">Research the organization
+</button>
+<div class="panel">
+  <p>A study conducted by inc.com showed that almost 50% of employers turned potential employees away because of their lack of knowledge of the company that they are applying to. This means that researching the company through websites such as LinkedIn or simply doing a Google search, can greatly increase your chances of having a successful job interview. Also make sure to show your employers that you know about the company in the questions that they may ask you. For example, your employer may ask you “Why are you want to work in this company?” to impress your employer, you would say “I want to be apart of the system that this company has that allows for employees to share ideas without worrying about criticism.</p>
+</div>
+
+<button class="accordion">Do not make it a one-sided interview
+</button>
+<div class="panel">
+  <p>  A study on job interviews revealed that employers are more likely to deny a job candidates who does not ask questions about the company than one who does. Even though this may seem like a minor tip, but asking questions can greatly enhance your job interview. Asking questions such as “How would you describe the culture of you company?” will show that you are curious about the mood of the company and that you feel that this company is a great fit for you. Doing this will impress your employer and make you very considerable for the job.
+
+</p>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
 </body>
     <!--Buttons-->
     <center>
