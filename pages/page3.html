@@ -12,19 +12,90 @@
 </iframe>
   <h1> Applications </h1>
     <p>This is a big part of the employment process. This is a chance for employers to see your skills and experiences. To get the most out of your applications, you have to:</p>
-  <ol>
-    <h2> Be Prepared </h2>
-    <li> Make sure you know the correct names, dates, places and other information you will need. You should also know the position title you are applying for and the right salary range. The Employment Center can probably help you do this research. </li>
-    <h2> Pay Attention </h2>
-    <li>Make sure you know the correct names, dates, places and other information you will need.</li>
-    <h2> Be Positive </h2>
-    <li> List what you have been doing, not what you haven’t done. For example, if you have been unemployed for a period of time, show the work you have been busy with, such as going to school, managing a household or doing carpentry on your home. </li>
-<h2> Check With References Before Hand </h2>
-<li>List people whom you have checked with and who have agreed to give a reference. Make sure that they remember the expectations and know when to finish the reference. Do not use relatives or friends as references.
-</li>
-<h2>Read over the application
-</h2>
-<li>Make sure you correct any errors or omissions. Check your spelling. Then, hand it in or mail it. Also, when mailing an application, be sure to send a cover letter re-stating your interest and qualifications.</li>
+ <style>
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212";
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+    <h1>Job Interview</h1>
+<p>The job interview is the most important part of the employment process the job interview shows who you really are and if you are a true fit for the job. There are many ways to approach a job interview and we will show you the best ways to do so. To have a good job interview, you must:</p>
+<button class="accordion"><span class="but1">Make sure that your social media is appropriate 
+
+</span></button>
+<div class="panel">
+  <p>In an annual study conducted by CareerBuilder found that over 50% of  hiring managers have checked their job candidates’ social media pages. To leave a good first impression on your employer, you should check all of your social media pages to ensure that there is no inappropriate material on the pages. You should also try to post information that might lead your hiring manager to consider you for the job. In the same study conducted by CareerBuilder, It is shown that hiring managers will favor social media accounts that show creativity, good communication skills and  convey a professional image of the candidate.
+
+</p>
+</div>
+
+<button class="accordion"><span class="but1"> Check with the references that you used
+
+
+    </span></button>
+<div class="panel">
+  <p>It is important to check with your references to make sure that they are willing to be a reference. You also need to make sure that their contact information is correct because many employers contact your references immediately to verify them and ask questions about their experience working with you.
+
+</p>
+</div>
+
+    <button class="accordion"><span class="but1">Read over your application
+
+</span>
+</button>
+<div class="panel">
+  <p> Careless mistakes can be fatal to a good job application and they can appear at any point of the application. To avoid these careless mistakes, you should check over your application to check over dates, spelling and other minor details that could mess your application up.
+
+</p>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
 </body>
     <!--Buttons-->
     <center>
@@ -40,54 +111,3 @@
     </center>
  <!--End Buttons-->
 </html>
-<style>
-h2 {
-text-decoration-color: #cccccc;
-  text-decoration-line: overline;
-font-weight: 600;
-    font-family:Helvetica;
-}
-body {
-  background-color: #DADADA;
-
-}
-.button5 {
-    text-align: center;
-        background-color: #008CBA;
-  border: none;
-    color: white;
-    padding: 10px 14px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition: all 0.5s;
-    cursor: pointer;} /* Blue Buttons*/
-    .button5:hover {
-      background-color:#005a77
-    }
-
-}
-h1{
-  font-size: 200%;
-  text-align: center;
-    font-family:Helvetica;
-}
-p{background color:#c1c1c1;
-    font-weight: 500;
-    font-size: 120%;
-     font-family:arial-black;
-    }
-    li{
-  background color:#c1c1c1;
-    font-weight: 500;
- font-size: 120%;
-   font-family:arial-black; 
-    }
-body{background-color:F4F4F4;
-}
-    img {
-    border-radius: 10px;
-}
-</style>
